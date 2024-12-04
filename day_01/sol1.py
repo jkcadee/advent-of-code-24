@@ -5,8 +5,7 @@
 l1 = []
 l2 = []
 
-def read_txt():
-
+def read_txt() -> None:
     file = open("day_01/p1_input.txt", "r")
     num_list = file.readlines()
     for v in num_list:
@@ -19,7 +18,7 @@ def read_txt():
 
     file.close()
 
-def solution_part1():
+def solution_part1() -> int:
     total_distance = 0
 
     for i in range(len(l1)):        
@@ -27,7 +26,7 @@ def solution_part1():
     
     return total_distance
 
-def solution_part2():
+def solution_part2() -> int:
     sim_score = 0
 
     for v in l1:
